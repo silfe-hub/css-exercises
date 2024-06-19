@@ -1,3 +1,4 @@
+
 /* this is some magical font-importing.  
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
@@ -9,12 +10,13 @@ body {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
 }
 
 .profile-image {
@@ -23,6 +25,7 @@ body {
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  margin-left: 16px;
 }
 
 .logo {
@@ -30,6 +33,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  margin: 8px;
 }
 
 button {
@@ -44,23 +48,17 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  margin: 8px;
 }
 
 ul {
-  display: flex;
-  justify-content: space-around;
   list-style-type: none;
-}
-
-.left {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-.right {
+.left, .right {
   display: flex;
-  padding-left: 8px;
-}
-
-.links li {
-  margin-right: 16px;
+  align-items: center;
 }
